@@ -1,4 +1,4 @@
-const {findShortestPathLength} = require('../pathfinding/maze')
+const {findShortestPathLength} = require('../src/pathfinding/maze')
 
 describe('pathfinding - happy path', function() {
     const fourByFour = [
