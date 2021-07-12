@@ -1,0 +1,25 @@
+{
+  "name": "intro-computer-science",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest --detectOpenHandles --verbose --testTimeout=1200000 test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muhammad707/intro-computer-science.git"
+  },
+  "author": "Mukhammadjon Sirojiddinov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/muhammad707/intro-computer-science/issues"
+  },
+  "homepage": "https://github.com/muhammad707/intro-computer-science#readme",
+  "devDependencies": {
+    "jest": "^27.0.6"
+  }
+}
