@@ -2,7 +2,7 @@
 
 
 ## 1. Tree traversals
- - DFS
+1. DFS
   - preorder
   - inorder
   - postorder
