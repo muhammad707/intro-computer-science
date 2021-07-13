@@ -1,6 +1,6 @@
 const breadthFirstTraverse = (queue, array) => {
 
-  if (!queue || !queue.left) return array;
+  if (!queue || !queue.length) return array;
   while (queue.length) {
     const elem = queue.shift()
     array.push(elem.value)
