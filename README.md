@@ -21,3 +21,9 @@ Finding shortest path between two points in 2D array
 
 ## 3. Graphs
 Finding the most common job title among networks of people
+
+## 4. Generate maze
+Creating curvy and random maze using recursive backtracking algorithm
+
+![Image of Empty maze] (/assets/empty-maze.jpg)
+Format: ![Alt Text](url)
