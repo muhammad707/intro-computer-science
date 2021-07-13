@@ -25,5 +25,13 @@ Finding the most common job title among networks of people
 ## 4. Generate maze
 Creating curvy and random maze using recursive backtracking algorithm
 
-![Image of Empty maze] (/assets/empty-maze.jpg)
-Format: ![Alt Text](url)
+<table>
+  <tr>
+    <td width="50%">
+      <img src="assets/empty-maze.jpg" width="100%">
+    </td>
+    <td width="60%">
+      <img src="assets/maze.jpg" width="100%">
+    </td>
+  </tr>
+</table>
