@@ -1,7 +1,7 @@
 class Node {
-  constructor(val, next = null) {
+  constructor(val) {
     this.value = val
-    this.next = next
+    this.next = null
   }
 }
 
@@ -44,8 +44,67 @@ class LinkedList {
   addValueToHead(val) {
     let newNode = new Node(val)
 
-    if (this.head) {
+    if (!this.head) {
+      this.head = newNode
+    } else {
+      newNode.next = this.head
+      this.head = newNode
     }
+  }
+
+  addValueToTail(val) {
+    let newNode = new Node(val)
+    if (!this.head) {
+      this.head = newNode
+    } else {
+      let node = this.head
+      while (node.next !== null) {
+        node = node.next
+      }
+      node.next = newNode
+    }
+  }
+
+  addValueByIndex(idx, val) {
+    let curr = this.head
+    let prev = null
+    let i = 1
+
+    while (curr.next !== null && i < idx) {
+      prev = curr
+      curr = curr.next
+      i++
+    }
+    let newNode = new Node(val)
+    prev.next = newNode
+    newNode.next = curr
+  }
+
+  deleteHead() {
+    this.head = this.head.next
+  }
+
+  deleteTail() {
+    let prev = null
+    let curr = this.head
+
+    while (curr.next !== null) {
+      prev = curr
+      curr = curr.next
+    }
+    prev.next = null
+  }
+
+  deleteNodeByIndex(idx) {
+    let prev = null
+    let curr = this.head
+    let i = 1
+    while (curr.next !== null && i < idx) {
+      prev = curr
+      curr = curr.next
+      i++
+    }
+    prev.next = curr.next
   }
 
   print() {
@@ -71,6 +130,3 @@ node3.next = node4
 node4.next = node5
 
 let linkedList = new LinkedList(node1)
-
-console.log(linkedList.print())
-console.log(linkedList.getValueFromIndex(3))
