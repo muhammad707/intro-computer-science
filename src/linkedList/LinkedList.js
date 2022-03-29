@@ -4,7 +4,6 @@ class Node {
     this.next = null
   }
 }
-
 class LinkedList {
   constructor(head = null) {
     this.head = head
@@ -130,3 +129,8 @@ node3.next = node4
 node4.next = node5
 
 let linkedList = new LinkedList(node1)
+
+module.exports = {
+  Node,
+  LinkedList,
+}

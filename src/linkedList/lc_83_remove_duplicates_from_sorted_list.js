@@ -17,7 +17,7 @@ var deleteDuplicates = function (head) {
     prev = head
 
   while (prev.next !== null) {
-    if (prev.val == curr.val) {
+    if (prev.val === curr.val) {
       prev.next = curr.next
     } else {
       prev = prev.next
@@ -26,3 +26,8 @@ var deleteDuplicates = function (head) {
   }
   return head
 }
+
+/*
+  Time Complexity - O(N)
+  Space Complexity O(1)
+*/
