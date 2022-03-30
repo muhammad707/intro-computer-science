@@ -114,7 +114,7 @@ class LinkedList {
       node = node.next
     }
 
-    return list.join('->')
+    console.log(list.join('->'))
   }
 }
 
