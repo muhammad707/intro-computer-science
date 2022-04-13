@@ -17,7 +17,6 @@ class LinkedList {
       count++
       node = node.next
     }
-
     return count
   }
 
@@ -117,18 +116,6 @@ class LinkedList {
     console.log(list.join('->'))
   }
 }
-
-let node1 = new Node(5)
-let node2 = new Node(4)
-let node3 = new Node(2)
-let node4 = new Node(10)
-let node5 = new Node(56)
-node1.next = node2
-node2.next = node3
-node3.next = node4
-node4.next = node5
-
-let linkedList = new LinkedList(node1)
 
 module.exports = {
   Node,
